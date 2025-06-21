@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("cloudimg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.weather-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 300px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+form input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.icon img {
+  width: 80px;
+}
+
+.weather-info > div {
+  margin: 10px 0;
+}
+
+.hidden {
+  display: none;
+}
