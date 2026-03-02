@@ -24,3 +24,4 @@ document.getElementById("weather-form").addEventListener("submit", function(e) {
     })
     .catch(() => alert("Error fetching data"));
 });
+
