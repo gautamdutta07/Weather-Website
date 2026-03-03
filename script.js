@@ -10,7 +10,7 @@ document.getElementById("weather-form").addEventListener("submit", function(e) {
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      if (data.cod === 200) {
+      if (data.cod === 200) {   
         document.getElementById("weather-info").classList.remove("hidden");
         document.getElementById("weather-icon").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
         document.getElementById("temp").textContent = `Temperature: ${data.main.temp}°C`;
@@ -24,4 +24,5 @@ document.getElementById("weather-form").addEventListener("submit", function(e) {
     })
     .catch(() => alert("Error fetching data"));
 });
+
 
