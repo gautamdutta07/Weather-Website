@@ -3,7 +3,7 @@ const apiKey = "110eb72cb182728acb2ffb4178817d82";
 document.getElementById("weather-form").addEventListener("submit", function(e) {
   e.preventDefault();
   const city = document.getElementById("city").value;
-  if (city.trim() === "") return;
+  if (city.trim() === "") return;    
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
   console.log(url);
@@ -24,5 +24,6 @@ document.getElementById("weather-form").addEventListener("submit", function(e) {
     })
     .catch(() => alert("Error fetching data"));
 });
+
 
 
