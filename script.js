@@ -7,7 +7,7 @@ document.getElementById("weather-form").addEventListener("submit", function(e) {
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
   console.log(url);  
-  fetch(url) 
+  fetch(url)   
     .then(response => response.json())
     .then(data => {
       if (data.cod === 200) {   
@@ -24,6 +24,7 @@ document.getElementById("weather-form").addEventListener("submit", function(e) {
     })
     .catch(() => alert("Error fetching data"));
 });
+
 
 
 
