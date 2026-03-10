@@ -8,7 +8,7 @@ body {
   justify-content: center;   
   align-items: center;
   height: 100vh;    
-  margin: 0;      
+  margin: 0;       
 }   
 
 .container {
@@ -59,6 +59,7 @@ form input[type="submit"] {
 .hidden {
   display: none;
 }
+
 
 
 
