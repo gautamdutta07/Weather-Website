@@ -4,7 +4,7 @@ document.getElementById("weather-form").addEventListener("submit", function(e) {
   e.preventDefault();
   const city = document.getElementById("city").value;
   if (city.trim() === "") return;     
-
+ 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
   console.log(url);  
   fetch(url)   
