@@ -1,2 +1,1 @@
- # Weather-Website.
-.
+ # Weather-Website
